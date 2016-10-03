@@ -1,0 +1,56 @@
+C:\Users\Marines\AppData\Local\Android\sdk
+C:\Program Files\Java\jdk1.8.0_91
+C:\Users\Marines\AppData\Local\Android\sdk\ndk-bundle
+
+
+Un provedor SSL se encarga de supervisar toda las operaciones 
+que se realicen a traves de este protocolo.
+
+
+Establecer las propiedades de la conexion SSL de la sigiente manera
+
+
+nos ayuda a especificar que clase es la encargada de manejar los sockets
+
+
+CorreoEnviado
+pruebaenviar@hotmail.com
+
+pruebaenviarCF@gmail.com
+
+JavaMail API - Oracle
+
+
+Permisos
+Gmail/mi cuenta/Acceso y seguridad/Opción Permitir el acceso de aplicaciones menos seguras: ACTIVADA
+
+
+
+Libreria JavaBeans Activation Framework - Oracle
+
+
+Hotmail...
+
+
+
+                    props.setProperty("mail.smtp.host" , "smtp.live.com");
+                    props.setProperty("mail.smtp.port" , "587");
+                    props.setProperty("mail.smtp.starttls.enable" , "true");
+                    props.setProperty("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+
+
+
+
+        //vamos ha conectarnos en el servidor
+                    Transport transport =session.getTransport("smtp");
+                    transport.connect("smtp.live.com", 587,usu, contra);
+                    //Obtener todas las direcciones de los destinatarios.
+                    transport.sendMessage(message,message.getAllRecipients());
+                    transport.close();();
+
+
+https://code.google.com/archive/p/javamail-android/downloads
+
+Google Code
+
+
